@@ -297,15 +297,13 @@ def search(request):
         users = User.objects.filter(first_name=first_name, last_name=last_name)
         serializer = UserListSerializer(users, many=True)
         return Response(data=serializer.data)
-    
 
-from rest_framework import viewsets
-from rest_framework import permissions
+# from rest_framework import viewsets
+# from rest_framework import permissions
 
-
-class PostViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint for posts
-    """
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
+# class PostViewSet(viewsets.ModelViewSet):
+#     """
+#     API endpoint for posts
+#     """
+#     queryset = Post.objects.all()
+#     serializer_class = PostSerializer

@@ -132,9 +132,7 @@ class ClosedOrderSerializer(serializers.ModelSerializer):
                         'deadline': {'read_only': True}}
 
 # endregion
-        
-
-class PostSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Post
-        fields = ('title', 'content', 'created_at')
+# class PostSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Post
+#         fields = ('title', 'content', 'created_at')

@@ -3,7 +3,8 @@ FROM node:alpine AS builder
 WORKDIR /heywork
 COPY client/ .
 
-RUN npm install
+# RUN npm install
+RUN npm install --save-exact
 RUN npm run ng -- build --prod
 FROM nginx:alpine
 
