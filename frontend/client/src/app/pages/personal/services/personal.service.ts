@@ -22,7 +22,7 @@ export class PersonalService {
 
   postOpenOrder(customer: number, executor: number, title: string, description: string, deadline: string){
     return this.http
-    .post('/order/create', {
+    .post('api/order/create', {
       customer: customer,
       executor: executor,
       title: title,
